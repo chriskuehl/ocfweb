@@ -15,37 +15,5 @@ setup(
     url='https://www.ocf.berkeley.edu/',
     author='Open Computing Facility',
     author_email='help@ocf.berkeley.edu',
-    install_requires=[
-        'cached-property',
-        # Celery 3.1.19 has a bug with Redis UNIX sockets that breaks ocfweb:
-        # https://github.com/celery/celery/issues/2903
-        'celery[redis]<3.1.18',
-        'django-bootstrap-form',
-        'django-ipware',
-        'django-mathfilters',
-        'django-redis',
-        'django>=1.9,<1.9.999',
-        'gunicorn',
-        'libsass<=0.10.0',
-        'lxml',
-        'matplotlib',
-        'mistune',
-        'numpy',
-        'ocflib',
-        'pycrypto',
-        'pygments',
-        'pymysql<0.6.7',  # ocflib requires this version and pip sucks (creates version conflict)
-        'python-dateutil',
-    ],
-    sass_manifests={
-        'ocfweb': ('static/scss',),  # XXX: must be tuple
-    },
-    entry_points={
-        'console_scripts': [
-            'ocfweb-run-periodic-functions = ocfweb.bin.run_periodic_functions:main',
-        ],
-    },
-    classifiers=[
-        'Programming Language :: Python :: 3',
-    ],
+    install_requires=[],
 )

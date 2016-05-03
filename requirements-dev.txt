@@ -1,9 +1,0 @@
--e .
-ckuehl-pre-commit-types==0.7.6.dev1
-coverage
-coverage-enable-subprocess
-coveralls
-ipdb
-mock
-pytest
-pytest-django

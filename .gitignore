@@ -10,7 +10,6 @@
 /debian/substvars
 /debian/*.substvars
 /debian/*.debhelper
-/debian/changelog
 
 ## generic python stuff below
 __pycache__/
